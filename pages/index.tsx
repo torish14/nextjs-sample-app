@@ -1,12 +1,23 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
+// import Head from "next/head";
+// import Image from "next/image";
+// import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
-  return <div>Welcome to Next.js!</div>;
-};
-
-console.log("hello");
+function Home() {
+  return (
+    <ul>
+      <li>
+        <Link href="/">
+          <a href="">Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/about">
+          <a href="">About US</a>
+        </Link>
+      </li>
+    </ul>
+  );
+}
 
 export default Home;
